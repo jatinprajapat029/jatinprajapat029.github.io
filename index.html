@@ -25,6 +25,11 @@
 </head>
 
 <body>
+
+<div class="cont">
+        <img src="audan.png" alt="">
+    </div>
+    
     <header>
 
         <nav>
@@ -67,6 +72,16 @@
             <p>Copyright &copy; Jatin 2026 | All rights reserved</p>
         </div>
     </footer>
+
+    <script>
+        let cont = document.querySelector(".cont")
+
+        window.addEventListener("mousemove", function (dets) {
+            cont.style.top = dets.clientY + 20 + "px"
+            cont.style.left = dets.clientX + 20 + "px"
+        })
+    </script>
+    
 </body>
 
 </html>
