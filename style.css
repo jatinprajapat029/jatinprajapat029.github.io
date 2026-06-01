@@ -19,13 +19,30 @@ body {
     overflow-x: hidden;
 }
 
-body{
-  width: 100%;
+body {
+    width: 100%;
     min-height: 100vh;
-    background-color:#1a1a1a;
+    background-color: #1a1a1a;
     /* background-color: var(--bg); */
     color: var(--text);
     overflow-x: hidden;
+    transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+.navb,
+.left,
+.right,
+.anchor,
+.briefintro h2,
+.nametwo,
+.in,
+.icon,
+footer {
+    transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, filter 0.35s ease;
+}
+
+.darkLight {
+    cursor: pointer;
 }
 
 .cont {
@@ -79,8 +96,9 @@ body{
     gap: 15px;
     padding: 15px;
 }
+
 .img {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 .buttonthing {
@@ -93,12 +111,13 @@ body{
     border: 1px solid #ABC0C0;
     border-radius: 12px;
     width: 150px;
-    text-align: center; 
+    text-align: center;
     font-family: Poppins;
     color: var(--text);
 }
 
-.left a, .right a {
+.left a,
+.right a {
     text-decoration: none;
     color: inherit;
 }
@@ -109,7 +128,7 @@ body{
     border: 1px solid #ABC0C0;
     border-radius: 12px;
     width: 160px;
-    text-align: center; 
+    text-align: center;
     font-family: Poppins;
     color: var(--text);
 }
@@ -120,7 +139,7 @@ body{
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
-    height:10vh;
+    height: 10vh;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
@@ -132,18 +151,17 @@ body{
     text-decoration: none;
 }
 
-.nav-right {
+.nav-actions {
     margin-left: auto;
-    margin-right: 10px;
-}
-
-.nav-end {
-    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-right: 10px;
 }
 
 .name {
     font-size: 35px;
-    color:rgb(151, 181, 187);
+    color: rgb(151, 181, 187);
     font-weight: 1000;
     margin-left: 10px;
     font-family: Story Script;
@@ -152,17 +170,18 @@ body{
     padding-bottom: 0px;
     line-height: 1;
 }
-.icon{
-    height:40px;
+
+.icon {
+    height: 40px;
     filter: brightness(0) invert(0.92);
 }
 
-header{
+header {
     height: 85vh;
 }
 
 footer {
-    color:white;
+    color: white;
     background-color: rgba(0, 0, 0, 0.35);
     height: auto;
     display: flex;
@@ -172,8 +191,7 @@ footer {
 }
 
 /* tablet mw 1024 */
-@media (max-width: 1024px) {
-}
+@media (max-width: 1024px) {}
 
 /* Small Tablet mw 768 */
 @media (max-width: 768px) {
@@ -266,7 +284,8 @@ footer {
         height: 35px;
     }
 
-    .left, .right {
+    .left,
+    .right {
         width: 120px;
         font-size: 12px;
     }
