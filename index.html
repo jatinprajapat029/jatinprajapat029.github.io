@@ -39,6 +39,7 @@
                     <img height="50px" src="AudanWeb.png" alt="AudanWeb Logo">
                 </div>
                 <h1 class="name">!Jatin</h1>
+                 <img class="darkLight" height="35px" width="35px" src="theme.svg" alt="darkLight">
                 <a class="anchor nav-right" target="_blank" rel="noopener noreferrer" href="https://discord.gg/QZ8UAvTC7E">
                     Discord
                 </a>
@@ -80,11 +81,21 @@
     </footer>
 
     <script>
-        let cont = document.querySelector(".cont")
+       let cont = document.querySelector(".cont")
 
         window.addEventListener("mousemove", function (dets) {
             cont.style.top = dets.clientY + 20 + "px"
             cont.style.left = dets.clientX + 20 + "px"
+        })
+
+        let img = document.querySelector(".darkLight");
+
+        img.addEventListener("click" , function () {
+            if (document.body.style.backgroundColor === "rgb(3, 60, 59)") {
+                document.body.style.backgroundColor = "";   
+            } else {
+                document.body.style.backgroundColor = "rgb(3, 60, 59)";
+            }
         })
     </script>
     
